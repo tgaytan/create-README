@@ -11,7 +11,7 @@ const questions = [
     "What are the installation steps?",
     "What is the usage?",
     "Any credits?",
-    "List any relevant licenses"
+    "Pick a license"
 ];
 
 // TODO: Create a function to write README file
@@ -30,35 +30,40 @@ var init = () => {
                 message: questions[0],
                 name: 'title'
             },
+            // {
+            //     type: 'input',
+            //     message: questions[1],
+            //     name: 'description'
+            // },
+            // {
+            //     type: 'confirm',
+            //     message: questions[2],
+            //     name: 'tableOfContents'
+            // },
+            // {
+            //     type: 'input',
+            //     message: questions[3],
+            //     name: 'installSteps'
+            // },
+            // {
+            //     type: 'input',
+            //     message: questions[4],
+            //     name: 'usage'
+            // },
+            // {
+            //     type: 'input',
+            //     message: questions[5],
+            //     name: 'credits'
+            // },
             {
-                type: 'input',
-                message: questions[1],
-                name: 'description'
-            },
-            {
-                type: 'confirm',
-                message: questions[2],
-                name: 'tableOfContents'
-            },
-            {
-                type: 'input',
-                message: questions[3],
-                name: 'installSteps'
-            },
-            {
-                type: 'input',
-                message: questions[4],
-                name: 'usage'
-            },
-            {
-                type: 'input',
-                message: questions[5],
-                name: 'credits'
-            },
-            {
-                type: 'input',
+                type: 'list',
                 message: questions[6],
-                name: 'licenses'
+                choices: ['none', 'Apache License 2.0','GNU General Public License v3.0','MIT License', 'BSD 2-Clause "Simplified" License',
+                          'BSD 3-Clause "New" or "Revised" License', 'Boost Software License 1.0', 'Creative Commons Zero v1.0 Universal',
+                          'Eclipse Public License 2.0', 'GNU Affero General Public License v3.0', 'GNU General Public License v2.0',
+                          'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense'
+                         ],
+                name: 'license'
             }
         ])
         .then((response) => {
