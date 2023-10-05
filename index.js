@@ -7,7 +7,7 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [
     "Type your project title",
     "Add a description",
-    "Do you want a table of contents?",
+    "How would you test this?",
     "What are the installation steps?",
     "What is the usage?",
     "Any credits?",
@@ -30,31 +30,31 @@ var init = () => {
                 message: questions[0],
                 name: 'title'
             },
-            // {
-            //     type: 'input',
-            //     message: questions[1],
-            //     name: 'description'
-            // },
-            // {
-            //     type: 'confirm',
-            //     message: questions[2],
-            //     name: 'tableOfContents'
-            // },
-            // {
-            //     type: 'input',
-            //     message: questions[3],
-            //     name: 'installSteps'
-            // },
-            // {
-            //     type: 'input',
-            //     message: questions[4],
-            //     name: 'usage'
-            // },
-            // {
-            //     type: 'input',
-            //     message: questions[5],
-            //     name: 'credits'
-            // },
+            {
+                type: 'input',
+                message: questions[1],
+                name: 'description'
+            },
+            {
+                type: 'input',
+                message: questions[2],
+                name: 'test'
+            },
+            {
+                type: 'input',
+                message: questions[3],
+                name: 'installSteps'
+            },
+            {
+                type: 'input',
+                message: questions[4],
+                name: 'usage'
+            },
+            {
+                type: 'input',
+                message: questions[5],
+                name: 'credits'
+            },
             {
                 type: 'list',
                 message: questions[6],
