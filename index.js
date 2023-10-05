@@ -11,7 +11,9 @@ const questions = [
     "What are the installation steps?",
     "What is the usage?",
     "Any credits?",
-    "Pick a license"
+    "Pick a license",
+    "What is your github username?",
+    "What is your email?"
 ];
 
 // TODO: Create a function to write README file
@@ -64,6 +66,16 @@ var init = () => {
                           'GNU Lesser General Public License v2.1', 'Mozilla Public License 2.0', 'The Unlicense'
                          ],
                 name: 'license'
+            },
+            {
+                type: 'input',
+                message: questions[7],
+                name: 'github'
+            },
+            {
+                type: 'input',
+                message: questions[8],
+                name: 'email'
             }
         ])
         .then((response) => {
