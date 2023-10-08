@@ -23,3 +23,7 @@ https://drive.google.com/file/d/1BxLZ5oX7BEBI-D55XGXz1MWxwYf1D8K7/view
 ## License
 
 N/A
+
+## Credits
+
+Started code was provided by The University of Texas at Austin online coding boot camp.  The starter code is included in potential-enigma-main.zip.
