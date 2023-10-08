@@ -10,7 +10,7 @@ const questions = [
     "How would you test this?",
     "What are the installation steps?",
     "What is the usage?",
-    "Any credits?",
+    "How to contribute?",
     "Pick a license",
     "What is your github username?",
     "What is your email?"

@@ -62,10 +62,11 @@ ${data.description}
 
 - [Installation](#installation)
 - [Usage](#usage)
+${link}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
-${link}
+
 
 ## Installation
 
@@ -74,6 +75,8 @@ ${data.installSteps}
 ## Usage
 
 ${data.usage}
+
+${licenseSection}
 
 ## Contributing
 
@@ -90,8 +93,6 @@ If you have additional questions, here is my contact information.
 Github: ${data.github} 
 
 Email: ${data.email}
-
-${licenseSection}
 `;
 }
 
